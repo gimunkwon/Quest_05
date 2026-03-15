@@ -54,7 +54,7 @@ void AMyActor::RotateActor()
 {
 	int32 RandomLocation = FMath::RandRange(10,30);
 	ActorRotation = GetActorRotation();
-	SetActorRotation(FRotator(ActorRotation.Yaw + RandomLocation, ActorRotation.Pitch + RandomLocation, ActorRotation.Roll + RandomLocation));
+	SetActorRotation(FRotator(ActorRotation.Pitch + RandomLocation, ActorRotation.Yaw + RandomLocation, ActorRotation.Roll + RandomLocation));
 }
 
 void AMyActor::TriggerEvent()
